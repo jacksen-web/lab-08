@@ -50,7 +50,7 @@ class WizardTest {
     @Test
     fun train_hasEnoughManaToTrain_powerUpByOne_andManaDownByFive() {
         evilWizard.train() // EvilWizard has 30 mana by default, so they are able to train
-        
+
         assertEquals(25,evilWizard.mana) // mana should be 30 - 5 = 25
         assertEquals(11,evilWizard.spellPower) // spellPower should be 10 + 1 = 11
     }
